@@ -26,17 +26,12 @@ SECRET_KEY = 'django-insecure-3f*v1r=bl#ufa_c-k7v*$3u@914v055^9!!@sk#93l=iiadpi(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['148.100.76.106','127.0.0.1']
+ALLOWED_HOSTS = ['148.100.76.106']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-        #categories
-        #"categories",
-        #"categories.editor",
-        'mptt',
-
         'ecommerce.apps.EcommerceConfig',
         'django.contrib.admin',
         'django.contrib.auth',
@@ -93,7 +88,7 @@ DATABASES = {
             'NAME' : 'ai_shopping_system',
             'USER' : 'dbadmin',
             'PASSWORD' : 'admin12345',
-            'HOST' : '148.100.76.106' ,
+            'HOST' : 'localhost' ,
             'PORT' : '5432',
             }    
 
