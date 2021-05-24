@@ -35,7 +35,7 @@ INSTALLED_APPS = [
         #categories
         #"categories",
         #"categories.editor",
-        'mptt',
+        #'mptt',
 
         'ecommerce.apps.EcommerceConfig',
         'django.contrib.admin',
