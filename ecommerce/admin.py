@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import *
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
+#from ecommerce.models import CategoryBase
 
 # Register your models here.
 
@@ -10,6 +11,8 @@ admin.site.register(Product)
 admin.site.register(Order)
 admin.site.register(OrderItem)
 admin.site.register(ShippingAddress)
+admin.site.register(CustomerActivity)
+admin.site.register(CategoryBase)
 
 # Define an inline admin descriptor for Customer model
 """class CustomerInline(admin.StackedInline):
